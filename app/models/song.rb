@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 require "pry"
 class Song < ApplicationRecord
     
@@ -10,3 +11,10 @@ class Song < ApplicationRecord
      true  if self.released
    end
 end
+=======
+class Song < ActiveRecord::Base 
+  validates :title, presence: true
+  validates :released, inclusion: [true,false]
+  
+end
+>>>>>>> aa44ebe9eb9c1f258f410bc1ba02d2cbc2ce6b61

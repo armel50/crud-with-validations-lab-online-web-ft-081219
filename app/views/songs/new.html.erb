@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <%= form_for @song  do |f| %>
     <%= f.text_field :title %>
     <%= f.text_field :artist_name %>
@@ -9,3 +10,14 @@
 
 
 <% end %>
+=======
+<%= form_for(@song) do |f| %>
+  <%=f.text_field :title %>
+  <%= f.number_field :release_year%>
+  <%= f.text_field :artist_name %> 
+  <%= f.text_field :genre %>
+  <%= f.check_box :released %>
+  
+  <%=f.submit  "Submit Post"%>
+<% end %>
+>>>>>>> aa44ebe9eb9c1f258f410bc1ba02d2cbc2ce6b61

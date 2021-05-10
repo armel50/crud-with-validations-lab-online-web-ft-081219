@@ -10,6 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
+<<<<<<< HEAD
 ActiveRecord::Schema.define(version: 20191019190301) do
 
   create_table "songs", force: :cascade do |t|
@@ -20,6 +21,16 @@ ActiveRecord::Schema.define(version: 20191019190301) do
     t.boolean  "released"
     t.datetime "created_at",   null: false
     t.datetime "updated_at",   null: false
+=======
+ActiveRecord::Schema.define(version: 20191019061824) do
+
+  create_table "songs", force: :cascade do |t|
+    t.string  "title"
+    t.boolean "released"
+    t.integer "release_year"
+    t.string  "artist_name"
+    t.string  "genre"
+>>>>>>> aa44ebe9eb9c1f258f410bc1ba02d2cbc2ce6b61
   end
 
 end
